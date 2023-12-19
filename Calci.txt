@@ -1,0 +1,41 @@
+class Calculator:
+    def add(self, x, y):
+        return x + y
+
+    def subtract(self, x, y):
+        return x - y
+
+    def multiply(self, x, y):
+        return x * y
+
+    def divide(self, x, y):
+        if y != 0:
+            return x / y
+        else:
+            return "Cannot divide by zero"
+
+    def floor_divide(self, x, y):
+        if y != 0:
+            return x // y
+        else:
+            return "Cannot divide by zero"
+
+    def modulo(self, x, y):
+        if y != 0:
+            return x % y
+        else:
+            return "Cannot divide by zero"
+
+calculator = Calculator()
+
+print("Addition:", calculator.add(5, 3))
+
+print("Subtraction:", calculator.subtract(8, 4))
+
+print("Multiplication:",calculator.multiply(7, 1))
+
+print("Division:", calculator.divide(18, 2))
+
+print("Floor Division:", calculator.floor_divide(20, 3))
+
+print("Modulo Division:",calculator.modulo(10, 3))
